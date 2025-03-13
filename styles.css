@@ -1,0 +1,492 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin: auto;
+}
+
+.navbar img {
+    width: 60px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; 
+}
+
+.navbar .form-control {
+    border-radius: 20px; 
+    border: 1px solid #ccc; 
+    padding: 8px 15px; 
+}
+
+.navbar .btn-outline-primary {
+    border-radius: 20px;
+    margin-left: 10px; 
+    padding: 8px 15px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .btn-outline-primary:hover {
+    background-color: #007bff; 
+    color: white; 
+}
+
+.navbar-toggler {
+    border: none; 
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none; 
+}
+
+.navbar-collapse {
+    background-color: #f8f9fa; 
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#confirmationMessage {
+    display: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.text-danger {
+    color: #dc3545; 
+}
+
+
+.hero {
+    background-image: url('WhatsApp\ Image\ 2025-03-05\ at\ 23.31.50\ \(3\).jpeg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #f8f9fa; 
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+}
+
+.description-section {
+    background-color: #f8f9fa; 
+    padding: 60px 0;
+}
+
+.carousel-item img {
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animate__fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+
+section {
+    margin-bottom: 60px;
+}
+
+img {
+    width: 80%; 
+    margin-left: 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.text-container {
+    position: relative;
+    text-align: right;
+    padding-right: 30px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    animation: fadeInRight 1.5s ease-out forwards;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+    animation: fadeInRight 2s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); 
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes slide-left-to-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+.slide-left-to-right {
+    animation: slide-left-to-right 1.5s ease-out forwards;
+    opacity: 0; 
+}
+
+.avantages-section {
+    background-color: #f8f9fa; 
+    padding: 60px 0;
+}
+
+.avantages-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.avantages-section .card {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.avantages-section .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.avantages-section .card-body {
+    padding: 20px;
+}
+
+.avantages-section .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.avantages-section .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.avantages-section .fa-leaf,
+.avantages-section .fa-tint,
+.avantages-section .fa-smile,
+.avantages-section .fa-globe,
+.avantages-section .fa-heart,
+.avantages-section .fa-recycle,
+.avantages-section .fa-seedling,
+.avantages-section .fa-star {
+    color: #007bff; 
+    transition: transform 0.3s;
+}
+
+.avantages-section .card:hover .fa-leaf,
+.avantages-section .card:hover .fa-tint,
+.avantages-section .card:hover .fa-smile,
+.avantages-section .card:hover .fa-globe,
+.avantages-section .card:hover .fa-heart,
+.avantages-section .card:hover .fa-recycle,
+.avantages-section .card:hover .fa-seedling,
+.avantages-section .card:hover .fa-star {
+    transform: rotate(360deg); 
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.avantages-section .card {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+.avantages-section .card:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.avantages-section .card:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.avantages-section .card:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.avantages-section .card:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.avantages-section .card:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+.avantages-section .card:nth-child(6) {
+    animation-delay: 3s;
+}
+
+.avantages-section .card:nth-child(7) {
+    animation-delay: 3.5s;
+}
+
+.avantages-section .card:nth-child(8) {
+    animation-delay: 4s;
+}
+
+
+.contact-section {
+    background-color: #f8f9fa; 
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.contact-section .form-control {
+    border-radius: 10px; 
+    border: 1px solid #ccc; 
+    padding: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-section .form-control:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); 
+}
+
+.contact-section .form-select {
+    border-radius: 10px; 
+    border: 1px solid #ccc; 
+    padding: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-section .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); 
+}
+
+.contact-section textarea {
+    resize: vertical; 
+}
+
+.contact-section .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-section form {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+footer {
+    background-color: #1e1e2f; 
+    color: #fff;
+    padding: 60px 0;
+}
+
+footer h5, footer h6 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+footer .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+footer .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+footer .btn-primary:hover {
+    background-color: #0056b3; 
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer .small {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+footer .fa-2x {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-top: 10px; 
+    }
+
+    .navbar .form-control {
+        margin-top: 10px; 
+    }
+}
